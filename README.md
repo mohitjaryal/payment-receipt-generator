@@ -53,7 +53,7 @@ payment-receipt-generator/
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/your-username/payment-receipt-generator.git
+git clone https://github.com/mohitjaryal/payment-receipt-generator.git
 cd payment-receipt-generator
 ```
 
