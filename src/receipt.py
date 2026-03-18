@@ -7,7 +7,7 @@ from datetime import datetime
 import os
 
 # generate recipt function
-def generate_receipt(name, product, duration, price):
+def generate_receipt(name, product, quantity, price, payment_method):
 
     # date
     date = datetime.now().strftime("%d-%m-%Y-%H-%M-%S")
@@ -18,8 +18,8 @@ def generate_receipt(name, product, duration, price):
     os.makedirs("output/", exist_ok=True)
 
     DATA=[
-        ["Date", "Custumer", "Product", "Duration", "Price(Rs)"],
-        [date, name, product, duration, price]
+        ["Date", "Custumer", "Product", "Quantity", "Price(Rs)", "Payment"],
+        [date, name, product, quantity, price, payment_method]
     ]
 
     # converting generated recipt into pdf
