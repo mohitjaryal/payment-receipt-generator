@@ -27,7 +27,7 @@ def generate_receipt(name, product, duration, price):
 
     # style
     styles = getSampleStyleSheet()
-    title_style = styles['Heading 1']
+    title_style = styles['Heading1']
     title_style.alignment = 1
 
     title = Paragraph('Payement Recipt', title_style)
