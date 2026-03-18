@@ -7,7 +7,7 @@ from datetime import datetime
 import os
 
 # generate recipt function
-def generate_recipt(name, product, duration, price):
+def generate_receipt(name, product, duration, price):
 
     # date
     date = datetime.now().strftime("%d-%m-%Y-%H-%M-%S")
