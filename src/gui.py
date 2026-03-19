@@ -1,6 +1,6 @@
 # gui.py
 import streamlit as st
-from receipt import generate_receipt  # import your function
+from receipt import generate_receipt 
 
 st.title("Payment Receipt Generator")
 

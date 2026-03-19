@@ -10,7 +10,6 @@ def generate_receipt(name, product, quantity, price, payment_method):
     # Generate timestamp
     date = datetime.now().strftime("%d-%m-%Y-%H-%M-%S")
     
-    # Ensure output folder exists
     os.makedirs("output", exist_ok=True)
     
     filename = f"output/receipt_{date}.pdf"

@@ -1,6 +1,6 @@
 # gui.py
 import streamlit as st
-from receipt import generate_receipt  # make sure this matches your file & function name
+from receipt import generate_receipt  
 
 st.title("Payment Receipt Generator")
 
@@ -15,10 +15,10 @@ if st.button("Generate Receipt"):
     if not (name and product and payment_method):
         st.error("Please fill all fields!")
     else:
-        # Call your receipt generation function
+        # Call receipt generation function
         file_path = generate_receipt(name, product, quantity, price, payment_method)
         st.success("✅ Receipt Generated!")
-        # Safe way to provide download button
+        # download button
         with open(file_path, "rb") as f:
             st.download_button(
                 label="Download Receipt",
